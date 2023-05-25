@@ -184,7 +184,7 @@ function cf7_facebook_pixel_send_conversion($contact_form) {
             } else {
                 // 錯誤回應處理
 				error_log( 'Facebook Pixel Conversions API Response Error: ' . $response_code );
-				error_log( 'Facebook Pixel Conversions API Response: ' . print_r( $response['body']['error']['error_user_msg'], true ) );
+				// error_log( 'Facebook Pixel Conversions API Response: ' . print_r( $response['body']['error']['error_user_msg'], true ) );
             }
         } else {
             // 錯誤處理
